@@ -1,5 +1,5 @@
 homepage: "https://www.cookiebox.ro"
 documentation: "https://www.cookiebox.ro"
 versions:
-  - sha: c335274fba3c322f76ac1ce7b93506fc47ccaec3
+  - sha: d1c45cc8fe028a4a67f46895c9fb0c02c149588c
     changeNotes: add encodeUriComponent for Cookiebox ID
