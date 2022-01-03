@@ -43,9 +43,10 @@ ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
 const injectScript = require('injectScript');
 const queryPermission = require('queryPermission');
+const encodeUriComponent = require('encodeUriComponent');
 const cookieboxId = data.cookiebox_id;
 
-let scriptUrl = 'https://www.cookiebox.ro/script/' + cookieboxId + '.js';
+let scriptUrl = 'https://www.cookiebox.ro/script/' + encodeUriComponent(cookieboxId) + '.js';
 
 if (queryPermission('inject_script', scriptUrl)) {
   injectScript(scriptUrl, data.gtmOnSuccess, data.gtmOnFailure);
@@ -93,6 +94,4 @@ scenarios: []
 
 ___NOTES___
 
-Created on 11/11/2021, 10:08:46 AM
-
-
+Created on 1/3/2022, 3:46:53 PM
